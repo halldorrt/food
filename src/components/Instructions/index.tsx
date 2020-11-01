@@ -1,21 +1,18 @@
 import React from 'react';
+import { RecipeInstructions } from '../../recipes/recipes';
 
-type InstructionsProps = {
-  instructions: { fields?: { title: string; text: string }[] };
+export type InstructionsProps = {
+  instructions: RecipeInstructions;
 };
 
-export default function Instructions(props: InstructionsProps) {
-  const { fields } = props.instructions;
+export default function Instructions({ instructions }: InstructionsProps) {
+  // Todo: key of instructions is order. We should have id for each ingredient, instruction etc. in a recipe
   return (
-    <section>
-      {fields?.map((field, idx) => {
-        return (
-          <div key={idx}>
-            <h2>{field.title}</h2>
-            <p>{field.text}</p>
-          </div>
-        );
-      })}
-    </section>
+    <>
+      <div key={instructions.order}>
+        <h2>{instructions.title}</h2>
+        <p>{instructions.text}</p>
+      </div>
+    </>
   );
 }

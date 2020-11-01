@@ -1,24 +1,19 @@
 import React from 'react';
 import styles from './styles.module.css';
-type Props = {
-  ingredients: {
-    fields?: {
-      quantity: number;
-      unit: string;
-      ingredient: string;
-      bakersPercentage: number;
-    }[];
-    primary?: { title: string };
-  };
+import { RecipeIngredientList } from '../../recipes/recipes';
+
+type IngredientsProps = {
+  ingredientList: RecipeIngredientList;
 };
 
-export default function Ingredients(props: Props) {
-  const { fields, primary } = props.ingredients;
+export default function Ingredients({ ingredientList }: IngredientsProps) {
+  // Todo: key of each ingredient is idx. We should have id for each ingredient, instruction etc. in a recipe
+  const ingredients = ingredientList.ingredients;
 
   return (
-    <div>
-      {primary?.title && <h2>{primary.title}</h2>}
-      <table className={styles.Ingredient}>
+    <>
+      {ingredientList?.title && <h2>{ingredientList.title}</h2>}
+      <table className={styles.ingredients}>
         <thead className={styles.ingredientHeaders}>
           <tr>
             <th>Magn</th>
@@ -27,15 +22,15 @@ export default function Ingredients(props: Props) {
           </tr>
         </thead>
         <tbody>
-          {fields?.map((field, idx) => (
-            <tr key={idx} className="Ingredient">
-              <td>{`${field.quantity} ${field.unit}`}</td>
-              <td>{field.ingredient}</td>
-              <td>{field.bakersPercentage}</td>
+          {ingredients?.map((row, idx) => (
+            <tr key={idx} className={styles.ingredient}>
+              <td>{`${row.quantity} ${row.unit}`}</td>
+              <td>{row.ingredient}</td>
+              <td>{row.bakersPercentage}</td>
             </tr>
           ))}
         </tbody>
       </table>
-    </div>
+    </>
   );
 }

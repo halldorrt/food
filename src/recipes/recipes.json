@@ -1,0 +1,101 @@
+{
+  "recipes": [
+    {
+      "id": "4b364c91-c26f-457a-b5a8-46ae16f0c68d",
+      "name": "Súrdeigsbeyglur",
+      "picture": "https://images.prismic.io/fermentation-station/a72e0fce-810b-463a-96cd-9d7c3bf496b7_20200407_120120.jpg?auto=compress,format",
+      "description": null,
+      "status": "Complete",
+      "body": [
+        {
+          "order": 1,
+          "type": "Ingredients",
+          "title": null,
+          "ingredients": [
+            {
+              "quantity": 500,
+              "unit": "grams",
+              "ingredient": "Brauðhveiti",
+              "bakersPercentage": 100
+            },
+            {
+              "quantity": 100,
+              "unit": "grams",
+              "ingredient": "Poolish",
+              "bakersPercentage": 20
+            },
+            {
+              "quantity": 100,
+              "unit": "grams",
+              "ingredient": "Súr",
+              "bakersPercentage": 20
+            },
+            {
+              "quantity": 270,
+              "unit": "grams",
+              "ingredient": "Vatn",
+              "bakersPercentage": 54
+            },
+            {
+              "quantity": 12,
+              "unit": "grams",
+              "ingredient": "salt",
+              "bakersPercentage": 2.4
+            },
+            {
+              "quantity": 15,
+              "unit": "grams",
+              "ingredient": "Hlynsíróp",
+              "bakersPercentage": 3
+            },
+            {
+              "quantity": 15,
+              "unit": "grams",
+              "ingredient": "Demerara sykur",
+              "bakersPercentage": 3
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "type": "Instructions",
+          "title": "Hefir og poolish",
+          "text": "Blandið hefi og poolish sex til átta klukkustundum fyrir bakstur.  Blandið hefinn í sömu hlutföllum og þið gefið súrmóðurinni ykkar. Passið  að eiga nóg af hefi í uppskriftina og nóg til að viðhalda súrmóðurinni  eftir bakstur ef þið ætlið að nota hefinn til þess. Um það bil 160-170  grömm af hefi í einfalda uppskrift ef viðhalda á súrdeigsmóðurinni. 110  grömm annars. Haldið súrmóðurinni og hefinum aðskildum frá poolish blöndunni, þið viljið ekki fá ger í súrinn. Blandið  næst poolish blönduna, innihaldsefnin má sjá að neðan. Hrærið saman  vatninu og gerinu þar til gerið er uppleyst. Bætið hveitinu út í og  hrærið þar til allt er blandað saman. Geymið blönduna í loftþéttum  umbúðum þar til deigið er blandað."
+        },
+        {
+          "order": 3,
+          "type": "Ingredients",
+          "title": "Poolish",
+          "ingredients": [
+            {
+              "quantity": 55,
+              "unit": "grams",
+              "ingredient": "Brauðhveiti",
+              "bakersPercentage": 100
+            },
+            {
+              "quantity": 55,
+              "unit": "grams",
+              "ingredient": "Vatn",
+              "bakersPercentage": 100
+            },
+            {
+              "quantity": 0.25,
+              "unit": "grams",
+              "ingredient": "ger",
+              "bakersPercentage": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29dddfbc-517e-4dfc-ad1d-5426db997cf3",
+      "name": "Þriggja tíma pizza",
+      "picture": "https://images.prismic.io/fermentation-station/d7432027-a682-4fde-a5dd-11a8ba2765f3_20190609_203118.jpg?auto=compress,format",
+      "description": null,
+      "status": "InProgress",
+      "body": null
+    }
+  ]
+}
