@@ -1,0 +1,14 @@
+.ingredients {
+  width: 100%;
+  margin: 2em;
+  border-collapse: collapse;
+}
+
+.ingredientHeaders {
+  border-bottom: 3px solid;
+}
+
+.ingredient {
+  text-align: center;
+  width: 33.33%;
+}
