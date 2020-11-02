@@ -1,12 +1,5 @@
 {
-  "auth": {
-    "food50f0b598": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "customAuth": false
-    }
-  },
+  "auth": {},
   "api": {
     "food": {
       "service": "AppSync",
