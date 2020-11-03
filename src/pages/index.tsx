@@ -27,6 +27,7 @@ export default function Home({ recipes }: HomeProps) {
             </li>
           ))}
         </ul>
+        <Link href={'/recipes/create'}>Create new Recipe</Link>
       </section>
     </Layout>
   );
