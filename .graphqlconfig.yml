@@ -1,6 +1,17 @@
 projects:
-  food:
-    schemaPath: amplify/backend/api/food/build/schema.graphql
+  foorecipevault:
+    schemaPath: amplify/backend/api/recipevault/build/schema.graphql
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+  recipevault:
+    schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.ts
     excludes:

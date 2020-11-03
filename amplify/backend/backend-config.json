@@ -1,7 +1,6 @@
 {
-  "auth": {},
   "api": {
-    "food": {
+    "recipevault": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -10,17 +9,10 @@
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7,
-              "description": ""
+              "description": "recipe vault backend api key"
             }
           },
-          "additionalAuthenticationProviders": [
-            {
-              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-              "userPoolConfig": {
-                "userPoolId": "authfood50f0b598"
-              }
-            }
-          ]
+          "additionalAuthenticationProviders": []
         }
       }
     }

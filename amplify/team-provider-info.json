@@ -1,15 +1,15 @@
 {
-  "dev": {
+  "production": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-food-dev-164108-authRole",
-      "UnauthRoleArn": "arn:aws:iam::625707267248:role/amplify-food-dev-164108-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::625707267248:role/amplify-food-dev-164108-authRole",
+      "AuthRoleName": "amplify-recipevault-production-01153-authRole",
+      "UnauthRoleArn": "arn:aws:iam::625707267248:role/amplify-recipevault-production-01153-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::625707267248:role/amplify-recipevault-production-01153-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-food-dev-164108-deployment",
-      "UnauthRoleName": "amplify-food-dev-164108-unauthRole",
-      "StackName": "amplify-food-dev-164108",
-      "StackId": "arn:aws:cloudformation:us-east-1:625707267248:stack/amplify-food-dev-164108/0bc753b0-1c61-11eb-b7e9-0abfd97085ad",
-      "AmplifyAppId": "dx5b1si0ms6nk"
+      "DeploymentBucketName": "amplify-recipevault-production-01153-deployment",
+      "UnauthRoleName": "amplify-recipevault-production-01153-unauthRole",
+      "StackName": "amplify-recipevault-production-01153",
+      "StackId": "arn:aws:cloudformation:us-east-1:625707267248:stack/amplify-recipevault-production-01153/2eb99d20-1d69-11eb-9b35-0e55cf8eb989",
+      "AmplifyAppId": "d2rvrbijv6ofkr"
     }
   }
 }

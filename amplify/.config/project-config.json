@@ -1,12 +1,12 @@
 {
-  "projectName": "food",
+  "projectName": "RecipeVault",
   "version": "3.0",
   "frontend": "javascript",
   "javascript": {
     "framework": "react",
     "config": {
       "SourceDir": "src",
-      "DistributionDir": "build",
+      "DistributionDir": "out",
       "BuildCommand": "npm run build",
       "StartCommand": "npm start"
     }
