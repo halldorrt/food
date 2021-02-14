@@ -9,7 +9,7 @@
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7,
-              "description": "recipe vault backend api key"
+              "description": "RecipeVault API key"
             }
           },
           "additionalAuthenticationProviders": []
