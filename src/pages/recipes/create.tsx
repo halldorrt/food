@@ -1,19 +1,12 @@
 import Head from 'next/head';
 import { FormEvent } from 'react';
 import Layout, { siteTitle } from '../../components/Layout';
-import { createRecipe } from '../../graphql/mutations';
-import {
-  CreateRecipeInput,
-  CreateRecipeMutation,
-  RecipeStatusEnum,
-} from '../../API';
-import { v4 as uuidv4 } from 'uuid';
-import { executeMutation } from '../../lib/graphql';
 
 async function handleCreatePost(event: FormEvent<HTMLFormElement>) {
   event.preventDefault();
+  console.log('A great success');
 
-  const form = new FormData(event.currentTarget);
+  /*const form = new FormData(event.currentTarget);
   const name = form.get('name')?.toString();
   const description = form.get('description')?.toString();
 
@@ -42,7 +35,7 @@ async function handleCreatePost(event: FormEvent<HTMLFormElement>) {
     window.location.href = `/recipes  /${data?.createRecipe?.id}`;
   } catch (e) {
     console.log(e);
-  }
+  }*/
 }
 
 export default function CreateRecipe() {
