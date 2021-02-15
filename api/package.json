@@ -1,0 +1,38 @@
+{
+  "name": "recipe-vault-api",
+  "version": "0.0.1",
+  "description": "API for recipe vault",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "serverless offline start",
+    "build": "tsc -p tsconfig.json && copyfiles -u 1 ./src/**/*.graphql lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halldorrt/food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/halldorrt/food/issues"
+  },
+  "homepage": "https://github.com/halldorrt/food#readme",
+  "devDependencies": {
+    "@types/isomorphic-form-data": "^2.0.0",
+    "copyfiles": "^2.4.1",
+    "graphql-tag": "^2.11.0",
+    "serverless": "^2.23.0",
+    "serverless-offline": "^6.8.0",
+    "serverless-webpack": "^5.3.5",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.21.2",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "apollo-server-lambda": "^2.21.0",
+    "graphql": "^15.5.0",
+    "graphql-tools": "^7.0.3"
+  }
+}
