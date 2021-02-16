@@ -51,6 +51,8 @@ lib/
 
 # webpack
 .webpack/
+**/.webpack/
 
 #Serverless
 .serverless/
+**/.serverless/
