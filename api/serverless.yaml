@@ -1,4 +1,4 @@
-service: demo-apollo-server-lambda
+service: recipe-vault-api
 provider:
   name: aws
   runtime: nodejs12.x

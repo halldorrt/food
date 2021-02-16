@@ -11,6 +11,7 @@ const server = new ApolloServer({
     event,
     context,
   }),
+  playground: { endpoint: '/dev/graphql' },
 });
 
 export const handler = server.createHandler({
