@@ -1,6 +1,7 @@
 import { ApolloServer } from 'apollo-server-lambda';
 import typeDefs from './graphql/typeDefs';
 import resolvers from './graphql/resolvers';
+import { getDataBase } from './infrastructure/db';
 
 const server = new ApolloServer({
   typeDefs,
@@ -10,6 +11,7 @@ const server = new ApolloServer({
     functionName: context.functionName,
     event,
     context,
+    ...getDataBase()
   }),
   playground: { endpoint: '/dev/graphql' },
 });

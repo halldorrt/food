@@ -2,8 +2,18 @@
 
 const resolvers /*: Resolvers */ = {
   Query: {
-    test: () =>
-      `Salutations from your GQL DataManager query endpoint, date: ${new Date().toISOString()}`,
+    test: async (_: any, {}, context: any) => {
+      try {
+        console.log(context.foodDB);
+        const recipes = await context.foodDB.any('select * from recipes.recipes');
+        console.log(recipes);
+        return JSON.stringify(recipes);
+      } catch (e) {
+        console.log(e);
+        throw e;
+      }
+      //return `Salutations from your GQL DataManager query endpoint, date: ${new Date().toISOString()}`
+    }
   },
 };
 

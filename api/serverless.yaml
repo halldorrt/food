@@ -3,9 +3,22 @@ provider:
   name: aws
   runtime: nodejs12.x
   region: us-east-1
+  vpc:
+    securityGroupIds:
+      - sg-038df35aceb5a792c
+    subnetIds:
+      - subnet-8fa34abe
+      - subnet-96d50ff0
+      - subnet-40e68c0d
+      - subnet-cc53f493
+      - subnet-da7ee2d4
+      - subnet-fe08a9df
+  environment:
+    FOODDB_CONFIG: ${ssm:/foodDB-connection-config~true}
 functions:
   graphql:
     handler: src/index.handler
+    timeout: 45
     events:
       - http:
           path: graphql
