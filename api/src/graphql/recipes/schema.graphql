@@ -1,0 +1,25 @@
+type Picture {
+  url: String!
+}
+
+enum RecipeStatusEnum {
+  IN_PROGRESS
+  COMPLETE
+}
+
+type Recipe {
+  id: ID!
+  name: String!
+  description: String!
+  picture: Picture!
+  status: RecipeStatusEnum!
+  createdTime: String!
+}
+
+extend type Query {
+  recipes: RecipesQuery!
+}
+
+type RecipesQuery {
+  list: [Recipe!]!
+}

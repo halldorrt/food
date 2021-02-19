@@ -1,0 +1,15 @@
+overwrite: true
+schema: 'src/**/*.graphql'
+documents: null
+generates:
+  src/graphql/schema.types.ts:
+    config:
+      contextType: ../server/context#Context
+      namingConvention:
+        enumValues: keep
+      federation: true
+      mappers:
+        RecipesQuery: ./recipes/resolvers#RecipesQueryPartial
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'
